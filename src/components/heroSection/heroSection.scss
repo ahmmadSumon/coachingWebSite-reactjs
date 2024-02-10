@@ -1,0 +1,71 @@
+// heroSection.scss
+
+.hero-section {
+ 
+    background-color: #FAF8F6;
+    position: relative;
+    padding-top: 55px;
+    margin-bottom: 96px;
+    .heroVecLeft {
+        position: absolute;
+        top: 115px;
+        left: 13%;
+      }
+      .heroVecRight {
+        position: absolute;
+        top: 4%;
+        right:38%;
+      }
+    .hero-section-row{
+        
+
+          .hero-left {
+            padding-top: 140px;
+            display: flex;
+            flex-direction: column;
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: -2%;
+              color: #4A556C;
+              opacity: .5;
+            }
+            h1 {
+              height: 172px;
+              font-size: 72px;
+              font-weight: 800;
+              line-height: 86.4%;
+              letter-spacing: -1%;
+              color: #333461;
+            }
+            h6 {
+              height: 116px;
+              font-size: 18px;
+              line-height: 28.8px;
+              font-weight: 400;
+              margin-bottom: 18px;
+            }
+          }
+ 
+ 
+            .hero-right img {
+                padding-top: 100px;
+                object-fit: cover;
+                margin-left: 100px;
+                width: 100%;
+                z-index: 1000;
+              
+          }
+         
+         
+         
+         
+         
+         
+         
+    }
+  
+  
+  }
+  

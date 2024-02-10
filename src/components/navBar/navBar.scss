@@ -1,0 +1,154 @@
+// NavBar.scss
+
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar-menuBtn {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &-icon {
+    color: #343a40;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  overflow-y: auto;
+  transition: height 0.3s ease;
+
+  // Add transition for smooth animation
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #343a40;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #20AD96;
+  }
+}
+
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #343a40;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover::before {
+    background-color: #343a40;
+  }
+
+  &:hover {
+    color: #20AD96;
+    font-weight: 600;
+  }
+}
+
+a:-webkit-any-link {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-menuBtn {
+    display: block;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: auto;
+
+    &.show {
+      height: 55%;
+      width: 100%;
+    }
+  }
+
+  .navbar-links .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1px !important;
+    margin-left: 20px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .btn1 {
+    margin-bottom: 170px;
+    margin-right: 10px;
+ 
+}
+}

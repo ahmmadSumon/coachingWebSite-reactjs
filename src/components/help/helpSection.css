@@ -1,0 +1,64 @@
+.help-con{
+    margin-top: 100px;
+}
+.helpVec{
+   margin-bottom: 16px;
+}
+.helpUpLeft h1{
+font-size: 48px;
+font-weight: 800;
+line-height: 56px;
+letter-spacing: -1%;
+color: #333461;
+overflow-y: hidden;
+}
+.helpUpRight{
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+  
+}
+.helpUpRight p{
+    width: 468px;
+}
+
+.help-row-down{
+   padding-top: 56px;
+   padding-bottom: 120px;
+}
+/* .help-row-down-con{ */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* cursor: pointer; */
+/*     */
+/* } */
+.help-row-down-con {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .help-row-down-con:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Subtle box shadow on hover */
+    /* Add more styles for the hover effect if desired */
+  }
+  
+.help-row-down-con h3{
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -3%;
+    font-weight: 700;
+    color: #041434;
+}
+.help-row-down-con p{
+margin-top: 16px;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -2%;
+font-weight: 400;
+color: #4A556C;
+width: 300px;
+}

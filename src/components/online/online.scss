@@ -1,0 +1,43 @@
+// Online.scss
+
+.online {
+    .online-con {
+      margin-bottom: 96px;
+      height: 480px;
+      width: 1281px;
+      background-color: #faf8f6;
+      border-radius: 24px;
+      overflow: hidden;
+  
+      .online-col {
+        padding: 129px 48px 129px 68px;
+  
+        h2 {
+          font-size: 36px;
+          font-weight: 800;
+          line-height: 44.65px;
+          color: #333461;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #4a556c;
+          opacity: 0.7;
+          margin-bottom: 40px;
+        }
+      }
+  
+      .online-img-col {
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px !important;
+        img{
+         
+        }
+      }
+    }
+  }
+  

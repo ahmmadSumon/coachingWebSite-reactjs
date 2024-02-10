@@ -1,0 +1,72 @@
+// footer.scss
+
+.footer-row {
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 169px;
+ width: 100%;
+
+  h5 {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333461;
+    padding-bottom: 16px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4a556c;
+      opacity: 0.5;
+      transition: all ease 0.3s;
+
+      &:hover {
+        opacity: 1;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.footer-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: max-content;
+
+  img {
+    height: 27.31px;
+    width: 149px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4a556c;
+    opacity: 0.5;
+  }
+}
+
+.footer-col-right,
+.footer-col-middle {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}
